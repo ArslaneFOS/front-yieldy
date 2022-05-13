@@ -437,6 +437,9 @@
     /*border-bottom: 3px solid rgba(205, 214, 218, 0.25);*/
 }
 
+#hero-faq .question:last-child .question-body {
+    border-bottom: 3px solid rgba(205, 214, 218, 0.25);
+}
 .qb-inactive {
     max-height: 0px;
     padding: 0px 24px;
