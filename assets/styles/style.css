@@ -569,8 +569,12 @@
         width: 100%;
     }
 
-    #hero-functionalities .hero-text {
+    .function-text, #hero-main .hero-text {
         height: 600px !important;
+    }
+
+    .download-text {
+        height: 480px !important;
     }
 
     .hero-text {
