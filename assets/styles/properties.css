@@ -1,0 +1,64 @@
+:root {
+    /*hero properties*/
+    /*--hero-content-height: 680px;*/
+
+    /*background circle properties*/
+    --bg-circle-size: 1205px;
+
+    /*front view phone properties*/
+    --front-view-phone-width: 262px;
+    --front-view-phone-height: 535px;
+
+    /*bitcoin svg properties*/
+    --bitcoin-svg-size: 188px;
+
+    /*insight svg properties*/
+    --insight-svg-size: 132px;
+
+    /*rotated left phone properties*/
+    --rotated-left-phone-width: 485.6px;
+    --rotated-left-phone-height: 500px;
+
+    /*bg square properties*/
+    --bg-square-size: 800px;
+
+    /*gradient square properties*/
+    --gradient-square-size: 184px;
+
+    /*trend up properties*/
+    --trend-up-width: 265px;
+    --trend-up-height: 160px; 
+
+    /*coin-plant properties*/
+    --coin-plant-width: 153px;
+    --coin-plant-height: 229px;
+
+    /*bush background properties*/
+    --bush-bg-width: 231px;
+    --bush-bg-height: 185px;
+
+    /*bush foreground properties*/
+    --bush-fg-width: 196px;
+    --bush-fg-height: 140px;
+
+    /*tilted phones properties*/
+    --tilted-phone-width: 266px;
+
+    /*skewed phones properties*/
+    --skewed-phone-width: 551px;
+
+    /*stocks cyptos properties*/
+    --stock-crypto-width: 637.52px;
+
+    /*rocket properties*/
+    --rocket-width: 201px;
+
+    /*space properties*/
+    --space-width: 288.75px;
+
+    /*bulb properties*/
+    --bulb-width: 132.76px;
+    
+    /*book properties*/
+    --book-width: 245.71px;
+}

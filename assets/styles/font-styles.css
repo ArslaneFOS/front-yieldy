@@ -1,0 +1,178 @@
+.title-wbg {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    color: #464F64;
+
+}
+
+.text-wbg {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #98A4BF;
+}
+
+/*.subtitle-wbg {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    /*text-align: center;
+
+    color: #98A4BF;
+
+    margin-top: 12px;
+}*/
+
+.card-subtitle-dark {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+
+    color: #464F64;
+}
+
+.title-cbg {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.subtitle-cbg {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.text-cbg {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-cbg {
+    text-decoration: none;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #F72F56;
+    padding: 15px 85px;
+    background: #FFFFFF;
+    text-align: center;
+
+    /* button-bg-cbg-shadow */
+    box-shadow: 0px 3px 6px 3px rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    min-width: 276px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: transform .25s;
+
+}
+
+.btn-cbg:hover {
+    transform: scale(1.05);
+    transition: transform .25s;
+}
+
+.btn-wbg {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    padding: 15px 22px;
+    background: linear-gradient(90deg, #F73056 0%, #FF5D75 100%);
+
+    /* button-bg-wbg-shadow */
+    box-shadow: 0px 4px 8px 1px rgba(247, 48, 86, 0.3);
+    border-radius: 25px;
+    text-align: center;
+    border-radius: 25px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: transform .25s;
+
+}
+
+.btn-wbg:hover {
+    transform: scale(1.05);
+    transition: transform 0.25s;
+}
+
+.question-title, .subtitle-wbg {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    color: #464F64;
+
+    transition: color 0.25s;
+
+}
+
+.link-text {
+    /* button-text-wbg */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    color: #464F64;
+}
+
+.link-text:hover {
+    color: #616f8d;
+}
