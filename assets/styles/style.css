@@ -482,7 +482,7 @@
     /* the outer space */
     border-color: #fff;
     background:
-        conic-gradient(from 90deg at var(--b) var(--b), transparent 90deg, #464F64 0) calc(100% + var(--b)/2) calc(100% + var(--b)/2)/ calc(50% + var(--b)) calc(50% + var(--b));
+        conic-gradient(from 90deg at var(--b) var(--b), #fff 90deg, #464F64 0) calc(100% + var(--b)/2) calc(100% + var(--b)/2)/ calc(50% + var(--b)) calc(50% + var(--b));
     display: inline-block;
     flex: none;
     cursor: pointer;
@@ -569,6 +569,10 @@
         width: 100%;
     }
 
+    #hero-functionalities .hero-text {
+        height: 600px !important;
+    }
+
     .hero-text {
         padding: 35px;
     }
@@ -617,6 +621,10 @@
 
     .question-header {
         flex-direction: column;
+    }
+
+    .question-title {
+        margin-bottom: 10px;
     }
 
 }
