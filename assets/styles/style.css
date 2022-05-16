@@ -193,13 +193,13 @@
 }
 
 #front-view-app {
-    width: var(--front-view-phone-width);
+    height: var(--front-view-phone-height);
 
     /*positionning*/
     z-index: 2;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) rotate(15deg);
+    transform: translate(-50%, -50%);
 }
 
 #bitcoin-svg {
@@ -207,7 +207,7 @@
 
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 150px), calc(-50% - 200px));
+    transform: translate(calc(-50% - 115px), calc(-50% - 200px));
 }
 
 #insight-svg {
@@ -232,12 +232,12 @@
 }
 
 #rotated-left-app {
-    width: var(--rotated-left-phone-width);
+    height: var(--rotated-left-phone-height);
 
     z-index: 2;
     left: 50%;
     top: 50%;
-    transform: translate(calc(-50% - 6.31px), calc(-50% + 3.74px));
+    transform: translate(calc(-50% + 20px), calc(-50% + 3.74px));
 }
 
 #gradient-square {
@@ -303,7 +303,7 @@
 }
 
 #tilted-right-app {
-    width: var(--tilted-phone-width);
+    height: var(--tilted-phone-height);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -331,16 +331,16 @@
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 175px), calc(-50% + 150px));
+    transform: translate(calc(-50% - 170px), calc(-50% + 150px));
 
 }
 
 #tilted-left-app {
-    width: var(--tilted-phone-width);
+    height: var(--tilted-phone-height);
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% + 35px), -50%);
+    transform: translate(calc(-50% + 35px), -50%) rotate(-0deg);
 }
 
 #stocks-cryptos {
@@ -351,11 +351,11 @@
 }
 
 #skewed-right-app {
-    width: var(--skewed-phone-width);
+    width: 600px;
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(calc(-50% - 35px), -50%) rotate(-30deg);
 }
 
 #rocket {
@@ -369,11 +369,11 @@
     width: var(--space-width);
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 70px), calc(-50% - 330px));
+    transform: translate(calc(-50% - 70px), calc(-50% - 315px));
 }
 
 #skewed-left-app {
-    width: var(--skewed-phone-width);
+    height: var(--skewed-phone-height);
     z-index: 2;
     top: 50%;
     left: 50%;
@@ -384,14 +384,14 @@
     width: var(--bulb-width);
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% + 150px), calc(-50% - 220px));
+    transform: translate(calc(-50% + 230px), calc(-50% - 150px));
 }
 
 #book {
     width: var(--book-width);
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 165px), calc(-50% + 80px));
+    transform: translate(calc(-50% - 180px), calc(-50% + 140px));
 }
 
 

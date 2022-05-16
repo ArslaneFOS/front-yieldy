@@ -43,9 +43,11 @@
 
     /*tilted phones properties*/
     --tilted-phone-width: 266px;
+    --tilted-phone-height: 580px;
 
     /*skewed phones properties*/
     --skewed-phone-width: 551px;
+    --skewed-phone-height: 620px;
 
     /*stocks cyptos properties*/
     --stock-crypto-width: 637.52px;
