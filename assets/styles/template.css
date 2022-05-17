@@ -139,7 +139,7 @@ footer input {
 }
 
 input:focus {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(250, 250, 250);
     outline: none;
 }
 
@@ -170,6 +170,7 @@ footer .social-links {
     align-self: center;
     width: 195px;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 footer .social-links a {

@@ -13,7 +13,7 @@
     --bitcoin-svg-size: 188px;
 
     /*insight svg properties*/
-    --insight-svg-size: 132px;
+    --insight-svg-size: 175px;
 
     /*rotated left phone properties*/
     --rotated-left-phone-width: 485.6px;
@@ -26,8 +26,7 @@
     --gradient-square-size: 184px;
 
     /*trend up properties*/
-    --trend-up-width: 265px;
-    --trend-up-height: 160px; 
+    --trend-up-width: 230px; 
 
     /*coin-plant properties*/
     --coin-plant-width: 153px;

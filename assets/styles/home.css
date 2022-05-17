@@ -203,16 +203,16 @@
 }
 
 #bitcoin-svg {
-    /*width: var(--bitcoin-svg-size);*/
-
+    width: var(--bitcoin-svg-size);
+    filter: sepia(50%);
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 115px), calc(-50% - 200px));
+    transform: translate(calc(-50% - 115px), calc(-50% - 200px)) rotate(-15deg);
 }
 
 #insight-svg {
-    /*width: var(--insight-svg-size);*/
-
+    width: var(--insight-svg-size);
+    filter: sepia(50%);
     top: 50%;
     left: 50%;
     transform: translate(calc(-50% + 135px), calc(-50% + 150px));
@@ -228,7 +228,7 @@
     left: 50%;
     top: 50%;
     transform: translate(calc(-50% - 393px), calc(-50% + 41.5px)) rotate(30deg);
-
+    z-index: 0;
 }
 
 #rotated-left-app {
@@ -250,7 +250,6 @@
 
 #trend-up {
     width: var(--trend-up-width);
-    height: var(--trend-up-height);
     left: 50%;
     top: 50%;
     transform: translate(calc(-50% + 170px), calc(-50% - 150px));
@@ -601,7 +600,7 @@
     #trend-up {
         left: 50%;
         top: 50%;
-        transform: translate(calc(-50% + 100px), calc(-50% - 200px)) rotate(-17deg) scale(.65);
+        transform: translate(calc(-50% + 120px), calc(-50% - 230px)) rotate(-17deg) scale(.65);
     }
 
     #tilted-left-app {
