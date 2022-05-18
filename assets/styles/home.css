@@ -107,7 +107,7 @@
     position: relative;
     transition: opacity 2s ease;
 
-    
+
 
 }
 
@@ -159,13 +159,13 @@
 .bg-circle,
 #rotated-left-app,
 #trend-up,
-#gradient-square,
+#wallet,
 .bg-square,
 #tilted-right-app,
 #tilted-left-app,
 #bush-foreground,
 #bush-background,
-#coin-plant,
+#coins,
 #skewed-left-app,
 #skewed-right-app,
 #rocket,
@@ -204,7 +204,7 @@
 
 #bitcoin-svg {
     width: var(--bitcoin-svg-size);
-    filter: sepia(50%);
+    filter: sepia(30%);
     top: 50%;
     left: 50%;
     transform: translate(calc(-50% - 125px), calc(-50% - 200px)) rotate(-15deg);
@@ -212,7 +212,7 @@
 
 #insight-svg {
     width: var(--insight-svg-size);
-    filter: sepia(50%);
+    filter: sepia(30%);
     top: 50%;
     left: 50%;
     transform: translate(calc(-50% + 125px), calc(-50% + 150px));
@@ -240,16 +240,17 @@
     transform: translate(calc(-50% + 20px), calc(-50% + 3.74px));
 }
 
-#gradient-square {
-    /*width: var(--gradient-square-size);*/
+#wallet {
+    width: var(--wallet-size);
 
     left: 50%;
     top: 50%;
-    transform: translate(calc(-50% - 130px), calc(-50% + 140px));
+    transform: translate(calc(-50% - 125px), calc(-50% + 120px)) rotate(-30deg);
 }
 
 #trend-up {
     width: var(--trend-up-width);
+
     left: 50%;
     top: 50%;
     transform: translate(calc(-50% + 170px), calc(-50% - 150px));
@@ -321,16 +322,16 @@
     z-index: 0;
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% + 165px), calc(-50% + 195px));
-
+    transform: translate(calc(-50% + 160px), calc(-50% + 150px));
+    filter: brightness(90%);
 }
 
-#coin-plant {
-    width: var(--coin-plant-width);
+#coins {
+    width: var(--coins-width);
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 170px), calc(-50% + 150px));
+    transform: translate(calc(-50% - 165px), calc(-50% + 180px));
 
 }
 
@@ -346,7 +347,8 @@
     width: var(--stock-crypto-width);
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% + 35px), -50%);
+    transform: translate(calc(-50% + 40px), -50%);
+    filter: sepia(20%);
 }
 
 #skewed-right-app {

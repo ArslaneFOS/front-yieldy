@@ -22,15 +22,15 @@
     /*bg square properties*/
     --bg-square-size: 800px;
 
-    /*gradient square properties*/
-    --gradient-square-size: 184px;
+    /*wallet properties*/
+    --wallet-size: 185px;
 
     /*trend up properties*/
     --trend-up-width: 230px; 
 
-    /*coin-plant properties*/
-    --coin-plant-width: 153px;
-    --coin-plant-height: 229px;
+    /*coins properties*/
+    --coins-width: 153px;
+    --coins-height: 229px;
 
     /*bush background properties*/
     --bush-bg-width: 231px;
