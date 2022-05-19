@@ -149,7 +149,8 @@ a.btn-wbg:hover {
     transition: transform 0.25s;
 }
 
-.question-title, .subtitle-wbg {
+.question-title,
+.subtitle-wbg {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 500;
@@ -185,10 +186,45 @@ a.btn-wbg:hover {
 input {
     -webkit-appearance: none;
     -moz-appearance: none;
-    
+
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
+}
+
+.card-title {
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #464F64;
+}
+
+.card-subtitle {
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #98A4BF;
+
+
+}
+
+.card-text {
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #98A4BF;
 }

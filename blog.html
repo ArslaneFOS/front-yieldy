@@ -9,10 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./assets/styles/blog.css">
+    <link rel="stylesheet" href="./assets/styles/blog.css">
     <link rel="stylesheet" href="./assets/styles/font-styles.css">
     <link rel="stylesheet" href="./assets/styles/template.css">
     <title>Blog | Yieldy</title>
+
+    
+
 </head>
 
 <body>
@@ -49,9 +52,9 @@
     </header>
 
     <main>
-        <div class="search">
+        <section class="search">
             <div class="search-bar">
-                <input class="search-field text-wbg" type="search" placeholder="Que voulez-vous lire ?"/>
+                <input class="search-field text-wbg" type="search" placeholder="Que voulez-vous lire ?" />
                 <div class="filters">
                     <div>
                         <input type="radio" name="filter" id="filter1" checked><label for="filter1">Tout</label>
@@ -67,7 +70,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="articles">
+            <div class="articles-wrapper">
+
+                
+
+            </div>
+
+        </section>
     </main>
 
     <footer>
@@ -119,7 +130,30 @@
         </div>
     </footer>
 
+<script>
     
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+    /*`
+    <div class="article-card">
+        <img src="#" alt="Thumbnail" class="article-thumbnail">
+        <div class="card-body">
+            <div class="card-header">
+                <span class="subtitle-wbg card-subtitle">XX/XX/XX | something</span>
+                <span class="title-wbg card-title">Something somewhere</span>
+            </div>
+            <span class="card-text text-wbg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quae error hic
+                blanditiis voluptates, nulla unde assumenda? Saepe debitis provident corporis quaerat
+                asperiores, doloremque rerum neque mollitia cupiditate, temporibus vero.
+            </span>
+        </div>
+    </div>
+    `*/
+</script>
+
 </body>
 
 </html>
