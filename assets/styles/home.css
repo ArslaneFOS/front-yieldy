@@ -619,15 +619,24 @@
     }
 
     #skewed-right-app {
-        transform: translate(calc(-50% + 50px), -50%);
+        /*transform: translate(calc(-50% + 50px), -50%);*/
+        transform: translate(calc(-50% + 50px), -50%) rotate(-30deg);
     }
 
     #rocket {
-        transform: translate(calc(-50% - 185px + 50px), calc(-50% - 65px));
+        transform: translate(calc(-50% - 125px), calc(-50% - 65px));
     }
 
     #space {
-        transform: translate(calc(-50% - 70px + 50px), calc(-50% - 330px));
+        transform: translate(calc(-50% - 20px), calc(-50% - 330px));
+    }
+
+    #book {
+        transform: translate(calc(-50% + 100px), calc(-50% + 250px)) rotate(15deg);
+    }
+
+    #bulb {
+        transform: translate(calc(-50% - 80px), calc(-50% - 260px)) rotate(-15deg);
     }
 
     .question {
