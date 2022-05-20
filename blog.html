@@ -145,24 +145,28 @@
     </footer>
 
     <script>
-        fetch('https://jsonplaceholder.typicode.com/posts/1')
-            .then(response => response.json())
-            .then(json =>
-                document.getElementById("articles-wrapper").innerHTML += `
+for (var i = 0; i < 10; i++) {
+
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+        .then(response => response.json())
+        .then(json =>
+            document.getElementById("articles-wrapper").innerHTML += `
     <div class="article-card">
-        <img src="#" alt="Thumbnail" class="article-thumbnail">
-        <div class="card-body">
-            <div class="card-header">
-                <span class="subtitle-wbg card-subtitle">XX/XX/XX | something</span>
-                <span class="title-wbg card-title">${json.title}</span>
-            </div>
-            <span class="card-text text-wbg">
-                ${json.body}...
-            </span>
+    <img src="#" alt="Thumbnail" class="article-thumbnail">
+    <div class="card-body">
+        <div class="card-header">
+            <span class="subtitle-wbg card-subtitle">XX/XX/XX | something</span>
+            <span class="title-wbg card-title">${json.title}</span>
         </div>
+        <span class="card-text text-wbg">
+            ${json.body}...
+        </span>
+    </div>
     </div>
     `
-            );
+        );
+}
+
     </script>
 
 </body>
