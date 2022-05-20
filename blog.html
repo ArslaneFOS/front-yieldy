@@ -82,7 +82,8 @@
                             <span class="title-wbg card-title">Lorem ipsum dolor</span>
                         </div>
                         <span class="card-text text-wbg">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas rerum tempore a praesentium, inventore nam ea eveniet expedita placeat at sapiente ...
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas rerum tempore a praesentium,
+                            inventore nam ea eveniet expedita placeat at sapiente ...
                         </span>
                         <a href="#" class="btn-wbg card-btn">
                             Lire cet article
@@ -145,14 +146,17 @@
     </footer>
 
     <script>
-for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 10; i++) {
 
-    fetch(`https://jsonplaceholder.typicode.com/posts/${i}`)
-        .then(response => response.json())
-        .then(json =>
-            document.getElementById("articles-wrapper").innerHTML += `
+            fetch(`https://jsonplaceholder.typicode.com/posts/${i}`)
+                .then(response => response.json())
+                .then(json => {
+                    fetch(`https://jsonplaceholder.typicode.com/photos/${i}`)
+                        .then(response => response.json())
+                        .then(photos =>
+                            document.getElementById("articles-wrapper").innerHTML += `
     <div class="article-card">
-    <img src="#" alt="Thumbnail" class="article-thumbnail">
+    <img src="${photos.thumbnailUrl}" alt="Thumbnail" class="article-thumbnail">
     <div class="card-body">
         <div class="card-header">
             <span class="subtitle-wbg card-subtitle">XX/XX/XX | something</span>
@@ -165,10 +169,11 @@ for (var i = 0; i < 10; i++) {
             Lire cet article
         </a>
     </div>
-    </div>
-    `
-        );
-}
+    </div>`
+                        );
+                }
+                );
+        }
 
     </script>
     <script src="./assets/scripts/header.js"></script>
