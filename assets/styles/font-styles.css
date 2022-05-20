@@ -137,7 +137,7 @@
     flex-direction: row;
     justify-content: center;
     transition: transform .25s;
-
+    text-decoration: none;
 }
 
 .btn-wbg:hover {

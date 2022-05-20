@@ -95,6 +95,7 @@ input[type$="radio"]:checked~label {
     flex-direction: column;
     align-items: center;
     background-color: white;
+    margin-bottom: 30px;
 }
 
 .articles-wrapper {
@@ -102,7 +103,6 @@ input[type$="radio"]:checked~label {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 60px 100px;
-    margin-bottom: 30px;
 
     gap: 40px 20px;
     max-width: 1440px;
@@ -130,4 +130,37 @@ input[type$="radio"]:checked~label {
     order: 0;
     align-self: stretch;
     flex-grow: 1;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.article-thumbnail {
+    height: 190px;
+    min-width: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+    align-items: stretch;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+}
+
+.card-subtitle {
+    align-self: flex-end;
+}
+
+.card-btn {
+    align-self: center;
+    position: absolute;
+    bottom: 30px;
 }
