@@ -118,7 +118,7 @@ input[type$="radio"]:checked~label {
     gap: 10px;
 
     max-width: 350px;
-    height: max-content;
+    height: 550px;
 
     background: #FFFFFF;
 
