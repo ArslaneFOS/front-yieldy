@@ -1,0 +1,149 @@
+main {
+    padding: 100px 250px;
+    margin-bottom: 30px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 10px;
+
+    background: #FFFFFF;
+
+    /* card-shadow */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.125);
+    border-radius: 30px;
+
+    max-width: 940px;
+    width: fit-content;
+}
+
+.article-header {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0px 100px 30px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.article-header .article-subtitle {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.article-thumbnail {
+    width: 100%;
+}
+
+.article-body {
+    padding: 30px 100px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.article-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0 100px;
+    gap: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    border-top: 2px solid #F0F1F3;
+}
+
+.return {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.return-arrow {
+    width: 11px;
+    height: 11px;
+    border-top: 1.5px solid #98A4bf;
+    border-left: 1.5px solid #98A4bf;
+
+    transform-origin: center center;
+    transform: rotate(-45deg);
+}
+
+.socials {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+article .social-links {
+    margin: 0 !important;
+}
+
+@media screen and (max-width: 810px) {
+    main {
+        padding: 100px 15px;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .article-header, .article-body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .article-title {
+        font-size: 36px !important;
+        line-height: 40px !important;
+    }
+
+    .article-subtitle {
+        font-size: 16px !important;
+    }
+
+    .article-footer {
+        flex-direction: column-reverse;
+        gap: 25px;
+        /*justify-content: flex-start;
+        align-items: flex-start;*/
+        margin: 0 50px;
+    }
+
+    .socials {
+        gap: 15px;
+    }
+
+    .socials > * {
+        align-self: center !important;
+    }
+}
