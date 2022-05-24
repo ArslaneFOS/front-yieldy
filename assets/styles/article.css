@@ -31,7 +31,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    align-items: center;
+    align-items: flex-start;
     padding: 0px 100px 30px;
     gap: 10px;
     flex: none;
@@ -55,6 +55,13 @@ article {
     order: 2;
     align-self: stretch;
     flex-grow: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+
+    text-align: justify;
 }
 
 .article-footer {

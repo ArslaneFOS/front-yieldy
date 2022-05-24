@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/blog.css">
+    <link rel="stylesheet" href="./assets/styles/article.css">
     <link rel="stylesheet" href="./assets/styles/font-styles.css">
     <link rel="stylesheet" href="./assets/styles/template.css">
-    <title>Blog | Yieldy</title>
+    <title>Conditions Générales de Vente | Yieldy</title>
 
 
 
@@ -52,33 +52,25 @@
     </header>
 
     <main>
-        <section class="search">
-            <div class="search-bar">
-                <input class="search-field text-wbg" type="search" placeholder="Que voulez-vous lire ?" />
-                <div class="filters">
-                    <div>
-                        <input type="radio" name="filter" id="filter1" checked><label for="filter1">Tout</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="filter" id="filter2"><label for="filter2">Investissement</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="filter" id="filter3"><label for="filter3">Cryptomonnaies</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="filter" id="filter4"><label for="filter4">Blockchain</label>
-                    </div>
-                </div>
+        <article>
+            <div class="article-header">
+                <span class="article-title">Qui Sommes-Nous ?</span>
             </div>
-        </section>
-        <section class="articles">
-            <div class="articles-wrapper" id="articles-wrapper">
-
-            
-
+            <div class="article-body article-text">
+                <!---->
+                <p>Fondée par une équipe d'entrepreneurs cumulant plus de 30 années d'expérience en finance, conseil et technologie, Yieldy est la première solution fintech à proposer des conseils d'investissement automatisés et gratuits aux résidents fran&ccedil;ais.</p>
+<p>Yieldy base sa solution sur un algorithme complexe qui dresse le profil investisseur de l'utilisateur à partir de ses réponses à une série de questions sur sa situation personnelle, financière ainsi que ses préférences de placement. A partir de ce profil, Yieldy propose des recommandations d'investissement spécifiques à l'utilisateur.</p>
+<p>Yieldy offre également la possibilité aux utilisateurs de réaliser leurs investissements directement à travers la plateforme et ce en ayant un contrôle absolu sur l'utilisation de leurs fonds.</p>
+<p>Entreprise citoyenne et responsable, Yieldy veille à maintenir les plus hauts standards en termes de protection des données personnelles et d'information des investisseurs.</p>
+                <!---->
             </div>
-
-        </section>
+            <div class="article-footer">
+                <a class="return" href="./index.html">
+                    <span class="return-arrow"></span>
+                    <span class="article-text">Retour au Site</span>
+                </a>
+            </div>
+        </article>
     </main>
 
     <footer>
@@ -129,34 +121,6 @@
 
         </div>
     </footer>
-
-    <script>
-        for (var i = 0; i < 10; i++) {
-
-            fetch(`https://jsonplaceholder.typicode.com/posts/${i}`)
-                .then(response => response.json())
-                .then(json => {
-                            document.getElementById("articles-wrapper").innerHTML += `
-    <div class="article-card">
-    <img src="./assets/images/temp-thumbnail.webp" alt="Thumbnail" class="article-thumbnail">
-    <div class="card-body">
-        <div class="card-header">
-            <span class="subtitle-wbg card-subtitle">XX/XX/XX | something</span>
-            <span class="title-wbg card-title">${json.title}</span>
-        </div>
-        <span class="card-text text-wbg">
-            ${json.body.substring(0, 100)}...
-        </span>
-        <a href="./article.html" class="btn-wbg card-btn">
-            Lire cet article
-        </a>
-    </div>
-    </div>`
-                }
-                );
-        }
-
-    </script>
     <script src="./assets/scripts/header.js"></script>
 </body>
 
