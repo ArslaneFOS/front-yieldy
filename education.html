@@ -81,35 +81,7 @@
         <section class="videos">
                 <span class="videos-title subtitle-wbg"><span class="down-arrow"></span>Dernières Vidéos</span>
             <div class="videos-wrapper">
-                <div class="video-card">
-                    <img src="./assets/images/temp-thumbnail.webp" alt="thumbnail" class="video-card-thumbnail">
-                    <div class="video-card-header">
-                        <span class="video-card-title">Lorem Ipsum Dolor</span>
-                        <span class="video-card-subtitle">5mn</span>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <img src="./assets/images/temp-thumbnail.webp" alt="thumbnail" class="video-card-thumbnail">
-                    <div class="video-card-header">
-                        <span class="video-card-title">Lorem Ipsum Dolor</span>
-                        <span class="video-card-subtitle">5mn</span>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <img src="./assets/images/temp-thumbnail.webp" alt="thumbnail" class="video-card-thumbnail">
-                    <div class="video-card-header">
-                        <span class="video-card-title">Lorem Ipsum Dolor</span>
-                        <span class="video-card-subtitle">5mn</span>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <img src="./assets/images/temp-thumbnail.webp" alt="thumbnail" class="video-card-thumbnail">
-                    <div class="video-card-header">
-                        <span class="video-card-title">Lorem Ipsum Dolor</span>
-                        <span class="video-card-subtitle">5mn</span>
-                    </div>
-                </div>
-                <div class="video-card">
+                <div class="video-card" onclick="javascript:openVideoOverlay(1);">
                     <img src="./assets/images/temp-thumbnail.webp" alt="thumbnail" class="video-card-thumbnail">
                     <div class="video-card-header">
                         <span class="video-card-title">Lorem Ipsum Dolor</span>
@@ -168,7 +140,20 @@
 
         </div>
     </footer>
+    <section class="video-overlay">
+        <article class="video-overlay-card">
+            <button class="close"></button>
+            <iframe class="video-frame" src="https://www.youtube.com/embed/bXDsW5XTaj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <span class="title-wbg video-overlay-title">Lorem Ipsum Dolor</span>
+            <span class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur commodi animi eum modi, debitis perferendis, qui sunt nisi et voluptas asperiores tempore? Eius earum repellendus repudiandae beatae rem quaerat!</span>
+        </article>
+    </section>-
     <script src="./assets/scripts/header.js"></script>
+    <script>
+        const openVideoOverlay = (id) => {
+            
+        }
+    </script>
 </body>
 
 </html>
