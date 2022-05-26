@@ -140,18 +140,28 @@
 
         </div>
     </footer>
-    <section class="video-overlay">
-        <article class="video-overlay-card">
-            <button class="close"></button>
-            <iframe class="video-frame" src="https://www.youtube.com/embed/bXDsW5XTaj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <span class="title-wbg video-overlay-title">Lorem Ipsum Dolor</span>
-            <span class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur commodi animi eum modi, debitis perferendis, qui sunt nisi et voluptas asperiores tempore? Eius earum repellendus repudiandae beatae rem quaerat!</span>
-        </article>
-    </section>-
     <script src="./assets/scripts/header.js"></script>
     <script>
         const openVideoOverlay = (id) => {
-            
+            document.body.innerHTML += `
+            <section class="video-overlay">
+                <article class="video-overlay-card">
+                    <button class="close title-wbg" onclick="closeOverlay()">×</button>
+                    <iframe class="video-frame" src="${"https://www.youtube.com/embed/bXDsW5XTaj4" /*video link*/}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-overlay-description">
+                        <span class="title-wbg video-overlay-title">${"Lorem Ipsum Dolor" /*Video Title*/}</span>
+                        <span class="article-text">${"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur commodi animi eum modi, debitis perferendis, qui sunt nisi et voluptas asperiores tempore? Eius earum repellendus repudiandae beatae rem quaerat!" /*Video Description*/}</span>
+                    </div>
+                </article>
+            </section>
+            `
+
+            document.body.classList.contains("stop-scroll") ? "" : document.body.classList.add("stop-scroll");
+        }
+
+        const closeOverlay = () => {
+            document.querySelector(".video-overlay").remove();
+            document.body.classList.contains("stop-scroll") ? document.body.classList.remove("stop-scroll") : "";
         }
     </script>
 </body>
