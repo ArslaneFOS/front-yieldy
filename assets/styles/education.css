@@ -116,7 +116,6 @@
 
     
     width: 74%;
-    height: 100%;
 
     border-radius: 15px;
 
@@ -170,7 +169,7 @@
         padding-left: 35px;
         padding-right: 35px;
         width: 95%;
-        height: max-content;
+        height: 100%;
     }
 
     
