@@ -144,7 +144,7 @@
     cursor: pointer;
 }
 
-a.btn-wbg:hover {
+.btn-wbg:hover {
     transform: scale(1.05);
     transition: transform 0.25s;
 }
@@ -183,7 +183,7 @@ a.btn-wbg:hover {
     color: #616f8d;
 }
 
-input {
+input, select, textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
 
