@@ -1,0 +1,8 @@
+<svg id="vuesax_linear_teacher" data-name="vuesax/linear/teacher" xmlns="http://www.w3.org/2000/svg" width="44.887" height="44.887" viewBox="0 0 44.887 44.887">
+  <g id="teacher">
+    <path id="Vector" d="M13.966.994,2.707,8.344a5.959,5.959,0,0,0,0,9.987l11.259,7.35a7.313,7.313,0,0,0,7.369,0l11.2-7.35a5.959,5.959,0,0,0,0-9.969l-11.2-7.35A7.269,7.269,0,0,0,13.966.994Z" transform="translate(4.83 3.738)" fill="none" stroke="#f72f56" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-2" data-name="Vector" d="M.019,0,0,8.772a6.38,6.38,0,0,0,4.077,5.667l5.966,1.983a7.192,7.192,0,0,0,3.778,0l5.966-1.983a6.38,6.38,0,0,0,4.077-5.667V.094" transform="translate(10.511 24.464)" fill="none" stroke="#f72f56" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-3" data-name="Vector" d="M0,11.222V0" transform="translate(40.024 16.833)" fill="none" stroke="#ffa31d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-4" data-name="Vector" d="M0,0H44.887V44.887H0Z" transform="translate(44.887 44.887) rotate(180)" fill="none" opacity="0"/>
+  </g>
+</svg>

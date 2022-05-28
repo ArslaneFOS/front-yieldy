@@ -1,0 +1,51 @@
+.hero-content {
+    align-items: center !important;
+}
+
+#hero-functionalities .hero-header {
+    padding: 70px 300px;
+}
+
+.function-text {
+    gap: 95px;
+    padding: 100px;
+    height: auto !important;
+    text-align: justify;
+}
+
+.points-container {
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 0 100px;
+}
+
+.point-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+    gap: 30px;
+
+    width: 360px;
+    height: 412.9px;
+
+    background: #FFFFFF;
+
+    /* card-shadow */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.125);
+    border-radius: 30px;
+
+    flex-shrink: 0;
+}
+
+.point-card-image {
+    height: 90px;
+    filter: contrast(200%);
+}
+
+@media screen and (max-width: 810px) {
+    #hero-functionalities .hero-header {
+        padding: 70px 15px;
+    }
+}
