@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/admin.css">
+    <link rel="stylesheet" href="./assets/styles/font-styles.css">
+    <link rel="stylesheet" href="./assets/styles/template.css">
+    <title>Yieldy</title>
+
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <a href="./index.html"><img src="./assets/svgs/logo-yieldy-h.svg" alt="logo"></a>
+            </div>
+            <!--<div class="nav-container">-->
+            <div class="nav-mobile-btn">
+                <div class="hamburger">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+            </div>
+            <nav class="nav-desktop">
+                <a href="fonctionnalite.html" class="link-text">Fonctionnalités</a>
+                <a href="./education.html" class="link-text">Éducation Financière</a>
+                <a href="./blog.html" class="link-text">Blog</a>
+                <a href="#" class="btn-wbg">Télécharger Yieldy!</a>
+            </nav>
+            <!--</div>-->
+        </div>
+        <nav class="nav-mobile">
+            <a href="fonctionnalite.html" class="link-text">Fonctionnalités</a>
+            <a href="./education.html" class="link-text">Éducation Financière</a>
+            <a href="./blog.html" class="link-text">Blog</a>
+            <a href="a-propos.html" class="link-text">Qui Sommes nous ?</a>
+            <a href="conditions.html" class="link-text">Conditions générales de vente</a>
+            <a href="politique.html" class="link-text">Politique de confidentialité</a>
+            <a href="#" class="btn-wbg">Télécharger Yieldy!</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method='post' class="article-form">
+
+        <input type="text" placeholder="Titre" name="title"/>
+
+        <div class="input-group">
+            <span class="subtitle-wbg">Couverture de l'article</span>
+            <label for="thumbnail-upload"  class="btn-wbg">Uploader</label>
+            <input type="file" name="thumbnail" id="thumbnail-upload" accept="image/png, image/jpeg, image/webp">
+        </div>
+
+        <div class="input-group">
+
+            <label for="editor" class="subtitle-wbg">Article</label>
+            <div id="toolbar">
+                <span class="ql-formats">
+                    <select class="ql-font">
+                        <option value="outfit">Outfit</option>
+                        <option value="arial">Arial</option>
+                        <option value="ubuntu">Ubuntu</option>
+                    </select>
+                    <select class="ql-size">
+                    </select>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-bold"></button>
+                    <button class="ql-italic"></button>
+                    <button class="ql-underline"></button>
+                    <button class="ql-strike"></button>
+                </span>
+                <span class="ql-formats">
+                    <select class="ql-color">
+                    </select>
+                    <select class="ql-background"></select>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-script" value="sub"></button>
+                    <button class="ql-script" value="super"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-header" value="1"></button>
+                    <button class="ql-header" value="2"></button>
+                    <button class="ql-blockquote"></button>
+                    <button class="ql-code-block"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-list" value="ordered"></button>
+                    <button class="ql-list" value="bullet"></button>
+                    <button class="ql-indent" value="-1"></button>
+                    <button class="ql-indent" value="+1"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-direction" value="rtl"></button>
+                    <select class="ql-align"></select>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-link"></button>
+                    <button class="ql-image"></button>
+                    <button class="ql-video"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-clean"></button>
+                    
+                </span>
+            </div>
+            <div id="editor">
+    
+            </div>
+        </div>
+
+        <div class="input-group">
+            <span class="check-container">
+                <input type="checkbox" name="category[]" id="category1" value="1"><label class="article-text" for="category1">categorie 1</label>
+            </span>
+            <span class="check-container">
+                <input type="checkbox" name="category[]" id="category2" value="2"><label class="article-text" for="category2">categorie 1</label>
+            </span>
+            <span class="check-container">
+                <input type="checkbox" name="category[]" id="category3" value="3"><label class="article-text" for="category3">categorie 1</label>
+            </span>
+        </div>
+
+        <button class="btn-wbg" type="submit">Soumettre</button>
+    </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-over">
+                <div class="footer-column">
+                    <a href="./index.html"><img src="./assets/svgs/logo-yieldy-h.svg" alt="logo"></a>
+                    <div class="footer-links">
+                        <a href="#" class="link-text">Contacter</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <span class="subtitle-wbg">Navigation</span>
+                    <div class="footer-links">
+                        <a href="fonctionnalite.html" class="link-text">Fonctionnalités</a>
+                        <a href="./education.html" class="link-text">Éducation Financière</a>
+                        <a href="#" class="link-text">Télécharger Yieldy</a>
+                        <a href="./blog.html" class="link-text">Blog</a>
+
+                        <a href="a-propos.html" class="link-text">Qui Sommes nous ?</a>
+                        <a href="conditions.html" class="link-text">Conditions générales de vente</a>
+                        <a href="politique.html" class="link-text">Politique de confidentialité</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <span class="subtitle-wbg">S'Abonner À La Newsletter</span>
+                    <div class="footer-links">
+                        <form action="#">
+                            <input type="email" name="email" id="email" placeholder="E-Mail" class="text-wbg">
+                            <button type="submit" class="next"></button>
+                        </form>
+                        <div class="social-links">
+                            <a href="#"><img src="./assets/svgs/instagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="./assets/svgs/twitter.svg" alt="Twitter"></a>
+                            <a href="#"><img src="./assets/svgs/linkedin.svg" alt="Linked In"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+
+            <div class="footer-content-under">
+                <span class="text-wbg">© 2022 Yieldy Tous Droits Réservés</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/header.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="./assets/scripts/image-resize.min.js"></script>
+    <script>
+        var fontSizes = ['8px', '9px', '10px', '11px', '12px', '14px', '15px', '16px', '18px', '20px', '24px', '32px', '42px', '54px', '68px', '84px', '98px'];
+        Quill.register(Quill.import('attributors/style/direction'), true);
+        Quill.register(Quill.import('attributors/style/align'), true);
+        var SizeStyle = Quill.import('attributors/style/size');
+        SizeStyle.whitelist = fontSizes;
+        Quill.register(SizeStyle, true);
+        var ColorStyle = Quill.import('attributors/style/color');
+        Quill.register(ColorStyle, true);
+        var BackgroundStyle = Quill.import('attributors/style/background');
+        Quill.register(BackgroundStyle, true);
+        var Fonts = Quill.import('attributors/style/font')
+        Fonts.whitelist = ['outfit', 'arial', 'ubuntu'];
+        Quill.register(Fonts, true)
+
+        fontSizes.forEach(size => { document.querySelector('.ql-formats .ql-size').innerHTML += `<option value="${size}">${size}</option>` });
+
+        Quill.register(Quill.import('modules/imageResize'), true)
+
+        var options = {
+            debug: 'info',
+            modules: {
+                toolbar: '#toolbar',
+                history: {
+                    delay: 1500,
+                    maxStack: 500,
+                    userOnly: true,
+                },
+                imageResize : {
+                    displaySize: true,
+                }
+            },
+            readOnly: false,
+            theme: 'snow',
+
+        };
+        var quill = new Quill('#editor', options);
+    </script>
+
+</body>
+
+</html>

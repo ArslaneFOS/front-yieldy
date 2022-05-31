@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/admin.css">
+    <link rel="stylesheet" href="./assets/styles/font-styles.css">
+    <link rel="stylesheet" href="./assets/styles/template.css">
+    <title>Administration - Blog | Yieldy</title>
+
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        .tg td {
+            /*border-color: black;*/
+            /*border-style: solid;*/
+            border-width: 1px;
+            font-size: 14px;
+            /*overflow: hidden;*/
+            padding: 10px 15px;
+            word-break: normal;
+        }
+        
+        .tg th {
+            /*border-color: black;
+            border-style: solid;*/
+            border-width: 1px;
+            font-size: 14px;
+            font-weight: normal;
+            /*overflow: hidden;*/
+            padding: 10px 15px;
+            word-break: normal;
+        }
+        
+        .tg .tg-cly1 {
+            text-align: left;
+            vertical-align: middle
+        }
+        
+        .tg .tg-nrix {
+            text-align: center;
+            vertical-align: middle
+        }
+        
+        .tg .tg-0lax {
+            text-align: left;
+            vertical-align: top
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <a href="./index.html"><img src="./assets/svgs/logo-yieldy-h.svg" alt="logo"></a>
+            </div>
+            <!--<div class="nav-container">-->
+            <div class="nav-mobile-btn">
+                <div class="hamburger">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+            </div>
+            <nav class="nav-desktop">
+                <a href="./fonctionnalite.html" class="link-text">Fonctionnalités</a>
+                <a href="./education.html" class="link-text">Éducation Financière</a>
+                <a href="./blog.html" class="link-text">Blog</a>
+                <a href="#" class="btn-wbg">Télécharger Yieldy!</a>
+            </nav>
+            <!--</div>-->
+        </div>
+        <nav class="nav-mobile">
+            <a href="./fonctionnalite.html" class="link-text">Fonctionnalités</a>
+            <a href="./education.html" class="link-text">Éducation Financière</a>
+            <a href="./blog.html" class="link-text">Blog</a>
+            <a href="./a-propos.html" class="link-text">Qui Sommes nous ?</a>
+            <a href="./conditions.html" class="link-text">Conditions générales de vente</a>
+            <a href="./politique.html" class="link-text">Politique de confidentialité</a>
+            <a href="#" class="btn-wbg">Télécharger Yieldy!</a>
+        </nav>
+    </header>
+
+    <main class="no-background">
+        <div class="search">
+            <div class="search-bar">
+                <input type="text" class="search-field article-text" placeholder="Article" name="search" id="search">
+                <input type="date" name="pub-date" id="pub-date" class="search-field article-text">
+            </div>
+            <a href="./article-editor.html" class="link-text" id="create-article">+ Créer un article</a>
+        </div>
+
+        <div class="articles-list article-text">
+            <div class="tg-wrap">
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-nrix"></th>
+                            <th class="tg-cly1">Nom Article</th>
+                            <th class="tg-cly1">Date</th>
+                            <th class="tg-cly1">Supprimer</th>
+                            <th class="tg-cly1">Modifier</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-nrix">1</td>
+                            <td class="tg-cly1">Les fractions d'actions : définition et utilité</td>
+                            <td class="tg-cly1">21/04/2022</td>
+                            <td class="tg-0lax"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-0lax"><a class="update" href="./article-editor.html">Modifier</a></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-nrix">2</td>
+                            <td class="tg-cly1">Etherum 2.0 : Mirage ou réalité ?</td>
+                            <td class="tg-cly1">11/03/2022</td>
+                            <td class="tg-0lax"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-0lax"><a class="update" href="./article-editor.html">Modifier</a></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-nrix">3</td>
+                            <td class="tg-cly1">Defi ou Metaverse : Dans quelle crypto faut-il investir en 2022 ?</td>
+                            <td class="tg-cly1">10/02/2022</td>
+                            <td class="tg-0lax"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-0lax"><a class="update" href="./article-editor.html">Modifier</a></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-nrix">4</td>
+                            <td class="tg-cly1">Les ETF : l’avenir de la finance ?</td>
+                            <td class="tg-cly1">24/01/2022</td>
+                            <td class="tg-0lax"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-0lax"><a class="update" href="./article-editor.html">Modifier</a></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-nrix">5</td>
+                            <td class="tg-cly1">2022 : est-ce l'année de l'investissement alternatif ? opportunités et
+                                tendances.</td>
+                            <td class="tg-cly1">11/03/2022</td>
+                            <td class="tg-0lax"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-0lax"><a class="update" href="./article-editor.html">Modifier</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-over">
+                <div class="footer-column">
+                    <a href="./index.html"><img src="./assets/svgs/logo-yieldy-h.svg" alt="logo"></a>
+                    <div class="footer-links">
+                        <a href="#" class="link-text">Contacter</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <span class="subtitle-wbg">Navigation</span>
+                    <div class="footer-links">
+                        <a href="./fonctionnalite.html" class="link-text">Fonctionnalités</a>
+                        <a href="./education.html" class="link-text">Éducation Financière</a>
+                        <a href="#" class="link-text">Télécharger Yieldy</a>
+                        <a href="./blog.html" class="link-text">Blog</a>
+
+                        <a href="./a-propos.html" class="link-text">Qui Sommes nous ?</a>
+                        <a href="./conditions.html" class="link-text">Conditions générales de vente</a>
+                        <a href="./politique.html" class="link-text">Politique de confidentialité</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <span class="subtitle-wbg">S'Abonner À La Newsletter</span>
+                    <div class="footer-links">
+                        <form action="#">
+                            <input type="email" name="email" id="email" placeholder="E-Mail" class="text-wbg">
+                            <button type="submit" class="next"></button>
+                        </form>
+                        <div class="social-links">
+                            <a href="#"><img src="./assets/svgs/instagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="./assets/svgs/twitter.svg" alt="Twitter"></a>
+                            <a href="#"><img src="./assets/svgs/linkedin.svg" alt="Linked In"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+
+            <div class="footer-content-under">
+                <span class="text-wbg">© 2022 Yieldy Tous Droits Réservés</span>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./assets/scripts/header.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/admin.css">
+    <link rel="stylesheet" href="./assets/styles/font-styles.css">
+    <link rel="stylesheet" href="./assets/styles/template.css">
+    <title>Administration - Éducation | Yieldy</title>
+
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            /*border-color: black;
+            border-style: solid;*/
+            border-width: 1px;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 15px;
+            word-break: normal;
+        }
+
+        .tg th {
+            /*border-color: black;
+            border-style: solid;*/
+            border-width: 1px;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 15px;
+            word-break: normal;
+        }
+
+        .tg .tg-lboi {
+            border-color: inherit;
+            text-align: left;
+            vertical-align: middle
+        }
+
+        .tg .tg-c3ow {
+            border-color: inherit;
+            text-align: center;
+            vertical-align: top
+        }
+
+        @media screen and (max-width: 767px) {
+            .tg {
+                width: auto !important;
+            }
+
+            .tg col {
+                width: auto !important;
+            }
+
+            .tg-wrap {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <a href="./index.html"><img src="./assets/svgs/logo-yieldy-h.svg" alt="logo"></a>
+            </div>
+            <!--<div class="nav-container">-->
+            <div class="nav-mobile-btn">
+                <div class="hamburger">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+            </div>
+            <nav class="nav-desktop">
+                <a href="./fonctionnalite.html" class="link-text">Fonctionnalités</a>
+                <a href="./education.html" class="link-text">Éducation Financière</a>
+                <a href="./blog.html" class="link-text">Blog</a>
+                <a href="#" class="btn-wbg">Télécharger Yieldy!</a>
+            </nav>
+            <!--</div>-->
+        </div>
+        <nav class="nav-mobile">
+            <a href="./fonctionnalite.html" class="link-text">Fonctionnalités</a>
+            <a href="./education.html" class="link-text">Éducation Financière</a>
+            <a href="./blog.html" class="link-text">Blog</a>
+            <a href="./a-propos.html" class="link-text">Qui Sommes nous ?</a>
+            <a href="./conditions.html" class="link-text">Conditions générales de vente</a>
+            <a href="./politique.html" class="link-text">Politique de confidentialité</a>
+            <a href="#" class="btn-wbg">Télécharger Yieldy!</a>
+        </nav>
+    </header>
+
+    <main class="no-background">
+        <div class="search">
+            <div class="search-bar">
+                <input type="text" class="search-field article-text" placeholder="Article" name="search" id="search">
+                <input type="date" name="pub-date" id="pub-date" class="search-field article-text">
+                <select name="category" id="category" class="article-text search-field">
+                    <option value="marche-action">Marché Action</option>
+                    <option value="etf">ETF</option>
+                    <option value="cryptos">Cryptomonnaies</option>
+                    <option value="analyses">Analyses</option>
+                    <option value="fin-personnelle">Finance Personnelle</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="articles-list article-text">
+            <div class="tg-wrap">
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-c3ow"></th>
+                            <th class="tg-lboi">Nom Vidéo</th>
+                            <th class="tg-lboi">Lien</th>
+                            <th class="tg-lboi">Catégorie</th>
+                            <th class="tg-lboi">Date</th>
+                            <th class="tg-lboi"></th>
+                            <th class="tg-lboi"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <form action="#" method="post">
+                                <td class="tg-c3ow"><input type="hidden" name="video-id"></td>
+                                <td class="tg-lboi">
+    
+                                    <input type="text" class="search-field article-text" placeholder="Article" name="search" id="search">
+                                </td>
+                                <td class="tg-lboi">
+                                    <input type="date" name="pub-date" id="pub-date" class="search-field article-text">
+                                    
+                                </td>
+                                <td class="tg-lboi">
+                                    <select name="category" id="category" class="article-text search-field">
+                                        <option value="marche-action">Marché Action</option>
+                                        <option value="etf">ETF</option>
+                                        <option value="cryptos">Cryptomonnaies</option>
+                                        <option value="analyses">Analyses</option>
+                                        <option value="fin-personnelle">Finance Personnelle</option>
+                                    </select>
+    
+                                </td>
+                                <td class="tg-lboi"></td>
+                                <td class="tg-lboi"><button id="create" class="article-text">+&nbsp;Créer</button></td>
+                                <td class="tg-lboi"><button id="update" class="article-text">↓&nbsp;Soumettre</button></td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <td class="tg-c3ow">1</td>
+                            <td class="tg-lboi">3 Choses à considérer avant d’acheter des Tezos</td>
+                            <td class="tg-lboi">youtu.be/lorem</td>
+                            <td class="tg-lboi">Marché Actions</td>
+                            <td class="tg-lboi">01/01/2022</td>
+                            <td class="tg-lboi"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-lboi"><button class="update">Modifier</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-c3ow">2</td>
+                            <td class="tg-lboi">Comment fonctionne le Bitcoin ?</td>
+                            <td class="tg-lboi">youtu.be/lorem</td>
+                            <td class="tg-lboi">ETF</td>
+                            <td class="tg-lboi">01/01/2022</td>
+                            <td class="tg-lboi"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-lboi"><button class="update">Modifier</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-c3ow">3</td>
+                            <td class="tg-lboi">Pourquoi investir en bourse ?</td>
+                            <td class="tg-lboi">youtu.be/lorem</td>
+                            <td class="tg-lboi">Cryptomonnaies</td>
+                            <td class="tg-lboi">01/01/2022</td>
+                            <td class="tg-lboi"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-lboi"><button class="update">Modifier</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-c3ow">4</td>
+                            <td class="tg-lboi">La régulation européenne des cryptos-actifs</td>
+                            <td class="tg-lboi">youtu.be/lorem</td>
+                            <td class="tg-lboi">Analyses</td>
+                            <td class="tg-lboi">01/01/2022</td>
+                            <td class="tg-lboi"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-lboi"><button class="update">Modifier</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-c3ow">5</td>
+                            <td class="tg-lboi">Comment et pourquoi investir dans l’ETF Pétrole ?</td>
+                            <td class="tg-lboi">youtu.be/lorem</td>
+                            <td class="tg-lboi">ETF</td>
+                            <td class="tg-lboi">01/01/2022</td>
+                            <td class="tg-lboi"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-lboi"><button class="update">Modifier</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-c3ow">6</td>
+                            <td class="tg-lboi">Apprendre à gérer les risques</td>
+                            <td class="tg-lboi">youtu.be/lorem</td>
+                            <td class="tg-lboi">Finance Personnelle</td>
+                            <td class="tg-lboi">01/01/2022</td>
+                            <td class="tg-lboi"><a href="#" class="delete">Supprimer</a></td>
+                            <td class="tg-lboi"><button class="update">Modifier</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-over">
+                <div class="footer-column">
+                    <a href="./index.html"><img src="./assets/svgs/logo-yieldy-h.svg" alt="logo"></a>
+                    <div class="footer-links">
+                        <a href="#" class="link-text">Contacter</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <span class="subtitle-wbg">Navigation</span>
+                    <div class="footer-links">
+                        <a href="./fonctionnalite.html" class="link-text">Fonctionnalités</a>
+                        <a href="./education.html" class="link-text">Éducation Financière</a>
+                        <a href="#" class="link-text">Télécharger Yieldy</a>
+                        <a href="./blog.html" class="link-text">Blog</a>
+
+                        <a href="./a-propos.html" class="link-text">Qui Sommes nous ?</a>
+                        <a href="./conditions.html" class="link-text">Conditions générales de vente</a>
+                        <a href="./politique.html" class="link-text">Politique de confidentialité</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <span class="subtitle-wbg">S'Abonner À La Newsletter</span>
+                    <div class="footer-links">
+                        <form action="#">
+                            <input type="email" name="email" id="email" placeholder="E-Mail" class="text-wbg">
+                            <button type="submit" class="next"></button>
+                        </form>
+                        <div class="social-links">
+                            <a href="#"><img src="./assets/svgs/instagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="./assets/svgs/twitter.svg" alt="Twitter"></a>
+                            <a href="#"><img src="./assets/svgs/linkedin.svg" alt="Linked In"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+
+            <div class="footer-content-under">
+                <span class="text-wbg">© 2022 Yieldy Tous Droits Réservés</span>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./assets/scripts/header.js"></script>
+</body>
+
+</html>

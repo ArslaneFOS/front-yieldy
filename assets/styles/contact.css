@@ -26,7 +26,6 @@ main {
 
 .contact-form input[type$="text"], .contact-form input[type$="email"], .contact-form textarea {
     border: none;
-
     border-bottom: 2px solid #98A4BF;
 }
 
