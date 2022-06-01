@@ -383,6 +383,42 @@
         </div>
     </footer>
 
+    <div class="chat invisible" id="chat">
+        <div class="chat-container">
+            <iframe src="./chat.html" frameborder="0" class="chat-frame" allowtransparency="true"></iframe>
+            <img src="./assets/svgs/close.svg" alt="Close" class="close" id="close">
+        </div>
+    </div>
+    <button class="toggle-chat" id="toggle-chat">
+        <img src="./assets/svgs/send.svg" alt="Toggle Chat">
+    </button>
+    <script>
+        const openChat = () => {
+            var chat = document.getElementById('chat');
+
+            chat.classList.remove('invisible')
+        }
+
+        const closeChat = () => {
+            var chat = document.getElementById('chat');
+
+            chat.classList.add('invisible')
+        }
+
+        const toggleChat = () => {
+            var chat = document.getElementById('chat');
+
+            if (chat.classList.contains('invisible')) {
+                openChat();
+            } else {
+                closeChat();
+            }
+        }
+
+        document.getElementById('toggle-chat').onclick = () => toggleChat();
+
+        document.getElementById('close').onclick = () => closeChat();
+    </script>
     <script src="./assets/scripts/header.js"></script>
 </body>
 

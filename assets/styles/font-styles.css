@@ -162,7 +162,7 @@
     color: #464F64;
 
     transition: color 0.25s;
-
+    z-index: 1;
 }
 
 .link-text {

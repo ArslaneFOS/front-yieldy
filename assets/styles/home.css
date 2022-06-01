@@ -438,6 +438,7 @@
 #hero-faq .question:last-child .question-body {
     border-bottom: 3px solid rgba(205, 214, 218, 0.25);
 }
+
 .qb-inactive {
     max-height: 0px;
     padding: 0px 24px;
@@ -457,7 +458,7 @@
 }
 
 .question-header:hover .question-title {
-    color:  #68738d;
+    color: #68738d;
     transition: color 0.25s;
 }
 
@@ -499,13 +500,67 @@
     padding-bottom: 90px;
 }
 
+.chat {
+    position: fixed;
+    bottom: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+.chat-frame {
+    width: 375px;
+    height: 600px;
+    background-color: transparent;
+
+    position: absolute;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+.chat-container {
+    position: relative;
+    width: 375px;
+    height: 600px;
+
+    bottom: 20px;
+    left: 105px;
+}
+
+.close {
+    position: absolute;
+    right: 17px;
+    top: 30px;
+
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.toggle-chat {
+    position: fixed;
+    bottom: 17px;
+    left: 22px;
+    border: none;
+    background: none;
+    }
+
+.toggle-chat img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
 @keyframes updown {
     0% {
         top: 50%;
     }
+
     50% {
         top: 48%;
     }
+
     100% {
         top: 50%;
     }
@@ -522,17 +577,17 @@
 
 .phone {
     transition: top .75s ease-in-out !important;
-    animation: updown 4s cubic-bezier(.45,.05,.55,.95) 0s infinite;
-    -webkit-animation: updown 4s cubic-bezier(.45,.05,.55,.95) 0s infinite;
+    animation: updown 4s cubic-bezier(.45, .05, .55, .95) 0s infinite;
+    -webkit-animation: updown 4s cubic-bezier(.45, .05, .55, .95) 0s infinite;
 }
 
 .hero-illustration img[src$=".svg"] {
-    animation: updown 8s cubic-bezier(.45,.05,.55,.95) 0s infinite;
-    
+    animation: updown 8s cubic-bezier(.45, .05, .55, .95) 0s infinite;
+
 }
 
 .hero-illustration :not(.phone, .bg-circle, .bg-square) {
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)) ;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 .hero-illustration .phone {
@@ -547,6 +602,7 @@
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
     }
+
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
@@ -578,7 +634,8 @@
         width: 100%;
     }
 
-    .function-text, #hero-main .hero-text {
+    .function-text,
+    #hero-main .hero-text {
         height: 600px !important;
         justify-content: space-evenly !important;
     }
