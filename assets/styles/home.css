@@ -106,9 +106,6 @@
     /*height: var(--hero-content-height);*/
     position: relative;
     transition: opacity 2s ease;
-
-
-
 }
 
 .hero-card {
@@ -500,58 +497,6 @@
     padding-bottom: 90px;
 }
 
-.chat {
-    position: fixed;
-    bottom: 0;
-    height: fit-content;
-    width: fit-content;
-}
-
-.chat-frame {
-    width: 375px;
-    height: 600px;
-    background-color: transparent;
-
-    position: absolute;
-    bottom: 0;
-
-    z-index: 1;
-}
-
-.chat-container {
-    position: relative;
-    width: 375px;
-    height: 600px;
-
-    bottom: 20px;
-    left: 105px;
-}
-
-.close {
-    position: absolute;
-    right: 17px;
-    top: 30px;
-
-    transform: translate(0, -50%);
-
-    cursor: pointer;
-    z-index: 2;
-}
-
-.toggle-chat {
-    position: fixed;
-    bottom: 17px;
-    left: 22px;
-    border: none;
-    background: none;
-    }
-
-.toggle-chat img {
-    width: 70px;
-    height: 70px;
-    cursor: pointer;
-}
-
 @keyframes updown {
     0% {
         top: 50%;
@@ -571,20 +516,20 @@
     transition: top 1.5s ease;
 }*/
 
-.hero-illustration :nth-child(n) {
+/*.hero-illustration :nth-child(n) {
     transition: top 1.5s ease;
-}
+}*/
 
 .phone {
-    transition: top .75s ease-in-out !important;
-    animation: updown 4s cubic-bezier(.45, .05, .55, .95) 0s infinite;
-    -webkit-animation: updown 4s cubic-bezier(.45, .05, .55, .95) 0s infinite;
+    /*transition: top .75s ease-in-out !important;*/
+    animation: updown 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite;
+    -webkit-animation: updown 3s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite;
 }
 
-.hero-illustration img[src$=".svg"] {
+/*.hero-illustration img[src$=".svg"] {
     animation: updown 8s cubic-bezier(.45, .05, .55, .95) 0s infinite;
 
-}
+}*/
 
 .hero-illustration :not(.phone, .bg-circle, .bg-square) {
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));

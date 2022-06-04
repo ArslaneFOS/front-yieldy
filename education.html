@@ -79,7 +79,8 @@
         </section>
 
         <section class="videos">
-                <span class="videos-title subtitle-wbg"><span class="down-arrow"></span>Dernières Vidéos</span>
+            <span class="videos-title subtitle-wbg"><span class="down-arrow"></span>Dernières Vidéos</span>
+            <!--card video template-->
             <div class="videos-wrapper">
                 <div class="video-card" onclick="javascript:openVideoOverlay(1);">
                     <img src="./assets/images/temp-thumbnail.webp" alt="thumbnail" class="video-card-thumbnail">
@@ -89,6 +90,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
 
@@ -147,7 +149,7 @@
             <section class="video-overlay">
                 <article class="video-overlay-card">
                     <button class="close title-wbg" onclick="closeOverlay()">×</button>
-                    <iframe class="video-frame" src="${"https://www.youtube.com/embed/bXDsW5XTaj4" /*video link*/}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video-frame" src="${"" /*video link*/}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="video-overlay-description">
                         <span class="title-wbg video-overlay-title">${"Lorem Ipsum Dolor" /*Video Title*/}</span>
                         <span class="article-text">${"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur commodi animi eum modi, debitis perferendis, qui sunt nisi et voluptas asperiores tempore? Eius earum repellendus repudiandae beatae rem quaerat!" /*Video Description*/}</span>

@@ -21,7 +21,7 @@ main
 
 #toolbar, #editor {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1010px;
     background-color: white;
 
     border: none;
@@ -32,6 +32,21 @@ main
 
 #editor {
     height: 500px;
+    z-index: 0;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.ql-editor {
+    width: inherit;
+    max-width: inherit;
+    overflow-wrap: inherit;
+    word-wrap: inherit;
+}
+
+#toolbar {
+    z-index: 1;
 }
 
 input[type$='text'] {
@@ -219,5 +234,9 @@ table {
     .tg-wrap {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+    }
+
+    .article-form {
+        padding: 100px 15px;
     }
 }

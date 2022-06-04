@@ -392,33 +392,7 @@
     <button class="toggle-chat" id="toggle-chat">
         <img src="./assets/svgs/send.svg" alt="Toggle Chat">
     </button>
-    <script>
-        const openChat = () => {
-            var chat = document.getElementById('chat');
-
-            chat.classList.remove('invisible')
-        }
-
-        const closeChat = () => {
-            var chat = document.getElementById('chat');
-
-            chat.classList.add('invisible')
-        }
-
-        const toggleChat = () => {
-            var chat = document.getElementById('chat');
-
-            if (chat.classList.contains('invisible')) {
-                openChat();
-            } else {
-                closeChat();
-            }
-        }
-
-        document.getElementById('toggle-chat').onclick = () => toggleChat();
-
-        document.getElementById('close').onclick = () => closeChat();
-    </script>
+    <script src="./assets/scripts/chat.js"></script>
     <script src="./assets/scripts/header.js"></script>
 </body>
 
