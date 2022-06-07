@@ -357,14 +357,14 @@
     width: var(--rocket-width);
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 185px), calc(-50% - 65px));
+    transform: translate(calc(-50% - 220px), calc(-50% - 10px));
 }
 
 #space {
     width: var(--space-width);
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 70px), calc(-50% - 315px));
+    transform: translate(calc(-50% - 70px), calc(-50% - 300px)) rotate(-15deg);
 }
 
 #skewed-left-app {
@@ -406,12 +406,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    height: 100%;
 }
 
 #line-burst {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 0;
 }
 
 .question {

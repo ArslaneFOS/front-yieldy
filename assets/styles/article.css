@@ -111,6 +111,17 @@ article {
     flex-grow: 0;
 }
 
+.article-text a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #444D61;
+}
+
+.article-text a:hover {
+    color: #2c323f;
+    text-decoration: underline;
+}
+
 article .social-links {
     margin: 0 !important;
 }

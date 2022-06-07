@@ -24,4 +24,4 @@ const toggleChat = () => {
 
 document.getElementById('toggle-chat').onclick = () => toggleChat();
 
-document.getElementById('close').onclick = () => closeChat();
+document.getElementById('close-chat').onclick = () => closeChat();

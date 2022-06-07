@@ -370,6 +370,29 @@ input[type$="radio"]:checked~label {
     display: none;
 }
 
+.download-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 40px;
+    border-radius: 23px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+#qr-code {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(240, 240, 240);
+}
 
 @media screen and (max-width:1000px) {
 

@@ -27,3 +27,52 @@ hamburgerBtn.onclick = () => {
         document.body.classList.remove("stop-scroll");
     }
 }
+
+const openDlOl = () => {
+    var downloadOverlay = document.getElementById('download-overlay');
+
+    downloadOverlay.classList.remove('invisible');
+    document.body.classList.add('stop-scroll')
+    document.querySelector("main").style.filter = "contrast(50%) brightness(110%)";
+}
+
+const closeDlOl = () => {
+    var downloadOverlay = document.getElementById('download-overlay');
+
+    downloadOverlay.classList.add('invisible')
+    document.body.classList.remove('stop-scroll')
+    document.querySelector("main").style.filter = "";
+}
+
+const toggleDlOl = () => {
+    var downloadOverlay = document.getElementById('download-overlay');
+
+    if (downloadOverlay.classList.contains('invisible')) {
+        openDlOl();
+    } else {
+        closeDlOl();
+    }
+}
+
+var downloadBtns = document.querySelectorAll("header a.btn-wbg");
+document.body.onload = () => {
+    if( /Android/i.test(navigator.userAgent) ) {
+        downloadBtns.forEach(btn => {
+            btn.href = "https://play.google.com/";
+        });
+    } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        downloadBtns.forEach(btn => {
+            btn.href = "https://apps.apple.com/";
+        });
+    }    
+    else {
+        downloadBtns.forEach(btn => {
+            console.log(btn);
+            btn.onclick = () => {
+                toggleDlOl();
+            }
+
+            document.querySelector("#close-download").onclick = () => closeDlOl();
+        });
+    }
+}
