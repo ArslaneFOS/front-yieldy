@@ -1,51 +1,109 @@
-.hero-content {
-    align-items: center !important;
-}
+main {
+    background-color: white;
+    margin-bottom: 30px;
 
-#hero-functionalities .hero-header {
-    padding: 70px 300px;
-}
-
-.function-text {
-    gap: 95px;
-    padding: 100px;
-    height: auto !important;
-    text-align: justify;
-}
-
-.points-container {
-    flex-wrap: wrap;
-    gap: 50px;
-    padding: 50px 0 100px;
-}
-
-.point-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 50px 30px;
-    gap: 30px;
+}
 
-    width: 360px;
-    height: 412.9px;
+.container::-webkit-scrollbar {
+    display: none;
+}
 
-    background: #FFFFFF;
+.experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    position: relative;
 
-    /* card-shadow */
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.125);
-    border-radius: 30px;
+    padding-bottom: 100px;
+}
 
+
+.container {
+    padding: 33px 250px;
+    max-width: 1440px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 0px;
+
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+
+    scroll-behavior: smooth;
+    width: 100vw;
+    
+}
+
+
+.phone-illustration {
+    scroll-snap-align: center;
+    min-width: 270px;
+    max-width: 320px;
     flex-shrink: 0;
 }
 
-.point-card-image {
-    height: 90px;
-    filter: contrast(200%);
+.sticky-text {
+    position: sticky;
+    top: 350px;
+    left: 250px;
+    
+    height: 0;
+    flex: none;
+    align-self: flex-start;
+    text-align: justify;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 35%;
 }
 
 @media screen and (max-width: 810px) {
-    #hero-functionalities .hero-header {
-        padding: 70px 15px;
+    .container {
+        flex-direction: row;
+        overflow-y: visible;
+        overflow-x: scroll;
+        padding: 0 10px;
+        gap: 20px;
+        align-items: center;
+        scroll-snap-type: x mandatory;
     }
+
+    .phone-illustration {
+        scroll-snap-align: center;
+        max-width: 100%;
+        transform: translateY(-50px);
+    }
+
+    .sticky-text {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        text-align: center;
+
+        max-width: 100%;
+        width: 100%;
+        min-height: 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experience-wrapper {
+        padding: 0;
+    }
+
 }

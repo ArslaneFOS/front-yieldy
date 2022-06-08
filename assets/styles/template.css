@@ -28,15 +28,40 @@ main {
     width: 100%;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+    
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+    position: absolute;
+}
+
+body::-webkit-scrollbar:hover {
+    width: 10px !important;
+}
+
+body::-webkit-scrollbar-track:hover {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 173, 173);
+    border-radius: 2.5px;
+}
+
 body {
-    /*scrollbar-gutter: stable;*/
+    /*scrollbar-gutter: auto;*/
     margin: 0;
     background-color: #F5F6F8;
     font-family: 'Outfit', sans-serif;
+
+    overflow-y: overlay;
 }
 
 header {
-    min-height: 76px;
+    min-height: 70px;
     overflow: visible;
     /* header */
     background: linear-gradient(269.82deg, rgba(254, 131, 42, 0.4) 0%, rgba(247, 51, 89, 0.4) 100%), rgba(255, 255, 255, 1);
