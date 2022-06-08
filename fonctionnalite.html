@@ -11,6 +11,7 @@
         rel="stylesheet">
     <!--<link rel="stylesheet" href="./assets/styles/home.css">-->
     <link rel="stylesheet" href="./assets/styles/fonctionnalite.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
     <link rel="stylesheet" href="./assets/styles/font-styles.css">
     <link rel="stylesheet" href="./assets/styles/template.css">
     <title>Yieldy</title>
@@ -53,6 +54,8 @@
         <div class="experience-wrapper">
             <span class="sticky-text subtitle-wbg" id="sticky-text">
             </span>
+            <span class="slide-next"></span>
+            <span class="slide-prev"></span>
             <div class="container">
                 <img src="./assets/images/iphone.png" alt="iphone" class="phone-illustration">
                 <img src="./assets/images/iphone.png" alt="iphone" class="phone-illustration">
@@ -126,7 +129,7 @@
             // isIntersecting is false when element and viewport don't overlap
             if(entries[0].isIntersecting === true)
                 document.getElementById("sticky-text").innerHTML = stickyTexts[illustrations.indexOf(entries[0].target)];
-        }, { threshold: [0.3] });
+        }, { threshold: [0.7] });
         illustrations.forEach(illustration => {
             observer.observe(illustration);
 });
