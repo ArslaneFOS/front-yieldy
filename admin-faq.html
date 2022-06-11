@@ -44,11 +44,7 @@
         .tg .tg-lboi {
             border-color: inherit;
             text-align: left;
-            vertical-align: middle;
-
-            position: relative;
-
-            overflow-y: visible;
+            vertical-align: middle
         }
 
         .tg .tg-c3ow {
@@ -111,16 +107,7 @@
     <main class="no-background">
         <div class="search">
             <div class="search-bar">
-                <input type="text" class="search-field article-text" placeholder="Article" name="search" id="search">
-                <input type="date" name="pub-date" id="pub-date" class="search-field article-text">
-                <select name="category" id="category" class="article-text search-field">
-                    <option value="" selected>--Catégorie--</option>
-                    <option value="marche-action">Marché Action</option>
-                    <option value="etf">ETF</option>
-                    <option value="cryptos">Cryptomonnaies</option>
-                    <option value="analyses">Analyses</option>
-                    <option value="fin-personnelle">Finance Personnelle</option>
-                </select>
+                <input type="text" class="search-field article-text" placeholder="Question" name="search" id="search"><span class="article-text">?</span>
             </div>
         </div>
 
@@ -130,10 +117,8 @@
                     <thead>
                         <tr>
                             <th class="tg-c3ow"></th>
-                            <th class="tg-lboi">Nom Vidéo</th>
-                            <th class="tg-lboi">Lien</th>
-                            <th class="tg-lboi">Catégorie</th>
-                            <th class="tg-lboi">Date</th>
+                            <th class="tg-lboi">Question</th>
+                            <th class="tg-lboi">Réponse</th>
                             <th class="tg-lboi"></th>
                             <th class="tg-lboi"></th>
                         </tr>
@@ -141,41 +126,22 @@
                     <tbody>
                         <tr>
                             <form action="#" method="post">
-                                <td class="tg-c3ow"><input type="hidden" name="video-id"></td>
+                                <td class="tg-c3ow"><input type="hidden" name="question-id"></td>
                                 <td class="tg-lboi">
-    
-                                    <input type="text" class="search-field article-text" placeholder="Titre" name="title" id="title">
+                                    <textarea type="text" class="search-field article-text" placeholder="Question" name="question" id="question" style="resize: vertical;"></textarea>
                                 </td>
                                 <td class="tg-lboi">
-                                    <input type="text" name="link" id="link" class="search-field article-text" placeholder="Lien">
+                                    <textarea type="text" class="search-field article-text" placeholder="Réponse" name="answer" id="answer" style="resize: vertical;"></textarea>
                                     
                                 </td>
-                                <td class="tg-lboi">
-                                    <button type="button" onclick="javascript:document.querySelector('#category-dialog').toggleAttribute('open');">Catégories</button>
-                                    <dialog id="category-dialog" style="position: relative;">
-                                        <span class="check-container">
-                                            <input type="checkbox" name="category[]" id="category1" value="1"><label class="article-text" for="category1">categorie 1</label>
-                                        </span>
-                                        <span class="check-container">
-                                            <input type="checkbox" name="category[]" id="category2" value="2"><label class="article-text" for="category2">categorie 1</label>
-                                        </span>
-                                        <span class="check-container">
-                                            <input type="checkbox" name="category[]" id="category3" value="3"><label class="article-text" for="category3">categorie 1</label>
-                                        </span>
-                                    </dialog>
-    
-                                </td>
-                                <td class="tg-lboi"></td>
                                 <td class="tg-lboi"><button id="create" class="article-text">+&nbsp;Créer</button></td>
                                 <td class="tg-lboi"><button id="update" class="article-text">↓&nbsp;Soumettre</button></td>
                             </form>
                         </tr>
                         <tr>
                             <td class="tg-c3ow">1</td>
-                            <td class="tg-lboi">3 Choses à considérer avant d’acheter des Tezos</td>
-                            <td class="tg-lboi">youtu.be/lorem</td>
-                            <td class="tg-lboi">Marché Actions</td>
-                            <td class="tg-lboi">01/01/2022</td>
+                            <td class="tg-lboi">question</td>
+                            <td class="tg-lboi">reponse</td>
                             <td class="tg-lboi"><a href="#" class="delete">Supprimer</a></td>
                             <td class="tg-lboi"><button class="update">Modifier</button></td>
                         </tr>

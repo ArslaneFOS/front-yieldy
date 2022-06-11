@@ -28,6 +28,10 @@ main {
     width: 100%;
 }
 
+main.overlayed {
+    filter : contrast(50%) brightness(110%);
+}
+
 body::-webkit-scrollbar {
     width: 5px;
     

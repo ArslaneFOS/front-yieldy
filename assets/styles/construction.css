@@ -1,0 +1,13 @@
+main {
+    background: url("./construction-background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+@media screen and (max-width:810px) {
+    main {
+        background-position: right 25% top 0%;
+    }
+}
