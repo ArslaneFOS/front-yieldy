@@ -24,6 +24,8 @@
     display: none;
 }*/
 
+
+
 main {
     width: 100%;
 }
@@ -173,18 +175,35 @@ footer {
 }
 
 footer form {
-    border-bottom: 2px solid #98A4BF;
     display: flex;
     width: 100%;
     max-width: 285px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    gap: 5px;
+}
+
+footer form button {
+    align-self: center;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+
+footer form:focus-within {
+    height: fit-content;
 }
 
 footer input {
     border: none;
-    flex-grow: 1;
+    flex-grow: 0;
+    border-bottom: 2px solid #98A4BF;
+
 }
 
 input:focus, textarea:focus, select:focus {
@@ -422,6 +441,7 @@ input[type$="radio"]:checked~label {
     width: 150px;
     background-color: rgb(240, 240, 240);
 }
+
 
 @media screen and (max-width:1000px) {
 
